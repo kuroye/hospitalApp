@@ -8,7 +8,7 @@ function connect_database() {
     $password = '';
 
     try {
-        $pdo= new PDO($dsn,$username,$password);
+        $pdo= new PDO('mysql:host=localhost;dbname=hospital','root','');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     }
