@@ -1,6 +1,6 @@
 <?php
-include 'base.php';
-require_once 'connect_database.php';
+include '../base.php';
+require_once '../utils.php';
 
 date_default_timezone_set('UTC');
 
@@ -51,7 +51,7 @@ $patients = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="col-sm">
 
                 <p>
-                    <a href="Add/frontPage.php" class="btn btn-outline-success">添加患者</a>
+                    <a href="add/add_patient.php" class="btn btn-outline-success">添加患者</a>
                 </p>
 
             </div>
@@ -116,6 +116,7 @@ $patients = $statement->fetchAll(PDO::FETCH_ASSOC);
             <th scope="col"></th>
 
         </tr>
+
         </thead>
         <tbody>
         <?php foreach ($patients as  $patient) : ?>
@@ -156,13 +157,13 @@ $patients = $statement->fetchAll(PDO::FETCH_ASSOC);
                         <a href="Edit/editPatient.php?id=<?php echo $patient['id']?>" type="button" class="btn btn-outline-primary">换号</a>
                     </td>
                     <td>
-                        <?php if ($authority=='Saniyaa'){?>
+
                         <form action="Delete/deletePatient.php" method="post">
                             <input type="hidden" name="id" value="<?php echo $patient['id']?>">
                             <button type="submit" class="btn btn-outline-danger">退号</button>
                         </form>
                     </td>
-                    <?php }?>
+
                 </tr>
             <?php }?>
         <?php endforeach;?>
