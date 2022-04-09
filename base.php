@@ -41,7 +41,7 @@ require_once 'ti.php'
                 <a class="nav-link" href="index.php">首页<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="RegisteredList/RegisteredList_CN/registeredList.php">挂号列表</a>
+                <a class="nav-link" href="registration/registration_list.php">挂号列表</a>
             </li>
 <!--            <li class="nav-item">-->
 <!--                <a class="nav-link" href="ReservedList/ReservedList_CN/reservedList.php">预约列表</a>-->
