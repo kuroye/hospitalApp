@@ -1,5 +1,5 @@
 <?php
-include 'base.php'
+include 'base.php';
 ?>
 
 <?php startblock('title');?>
