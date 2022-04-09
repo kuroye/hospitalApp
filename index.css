@@ -1,0 +1,9 @@
+#logo {
+    color: green;
+}
+
+.center_word {
+    text-align: center;
+    font-size: 6em;
+    padding-bottom: 10px;
+}
