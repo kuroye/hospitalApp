@@ -51,7 +51,7 @@ $patients = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="col-sm">
 
                 <p>
-                    <a href="add/add_patient.php" class="btn btn-outline-success">添加患者</a>
+                    <a href="add/select_doctor.php.php" class="btn btn-outline-success">添加患者</a>
                 </p>
 
             </div>
