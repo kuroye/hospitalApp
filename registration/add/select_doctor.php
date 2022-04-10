@@ -56,14 +56,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             <div class="row">
-                <!--                --><?php //if ($bool==false){?>
+
                 <div class="col">
 
                 </div>
                 <div class="col">
                     <lable>医生</lable>
                     <select class="form-control" name="doctor">
-                        <option value="<?php echo $doctor?>"><?php include_once('../../../function.php');echo doctor_numToStrSingle($doctor) ?></option>
+                        <option value="<?php echo $doctor?>"><?php doctor_num_to_str_single($doctor) ?></option>
                         <option value="1">别医生</option>
                         <option value="2">努医生</option>
                         <option value="3">艾登医生</option>
